@@ -1,8 +1,10 @@
-$ = jQuery = require('jquery');
+"use strict";
 var React = require('react');
-var Home = require('./components/homePage');
-var About = require('./components/about/aboutPage');
-var Header = require('./components/common/header');
-var Authors = require('./components/authors/authorPage');
 
-React.render(<Authors />, document.getElementById('app'));
+var Router = require('react-router');
+var routes = require('./routes');
+
+// pass Router.HistoryLocation as second params to change # url to html5 history location
+Router.run(routes, function (Handler) {
+    React.render(<Handler />, document.getElementById('app'));
+})

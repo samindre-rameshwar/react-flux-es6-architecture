@@ -1,22 +1,25 @@
 "use strict";
 var React = require('react');
+var Router = require('react-router');
+var Link = Router.Link;
+
 var Header = React.createClass({
     render: function () {
         return (
             <nav className="nav navbar-default" style={{ 'background': 'skyblue' }}>
                 <div className="container-fluid">
-                    <a href="/" className="navbar-brand" style={{ 'padding': '3px 15px' }}>
+                    <Link to="app" className="navbar-brand" style={{ 'padding': '3px 15px' }}>
                         <img src="images/logo-new.png" />
-                    </a>
+                    </Link>
                     <ul className="nav navbar-nav">
-                        <li><a href="/" style={{ 'color': '#000' }}>Home</a></li>
-                        <li><a href="/#authors" style={{ 'color': '#000' }}>Authors</a></li>
-                        <li><a href="/#about" style={{ 'color': '#000' }}>About</a></li>
+                        <li><Link to="app" style={{ 'color': '#000' }}>Home</Link></li>
+                        <li><Link to="authors" style={{ 'color': '#000' }}>Authors</Link></li>
+                        <li><Link to="about" style={{ 'color': '#000' }}>About</Link></li>
                     </ul>
                 </div>
             </nav>
         );
     }
-})
+});
 
 module.exports = Header;
