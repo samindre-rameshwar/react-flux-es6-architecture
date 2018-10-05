@@ -1,7 +1,6 @@
 "use strict";
 
 var React = require('react');
-var AuthorActions = require('../../actions/authorActions');
 var AuthorStore = require('../../stores/authorStore');
 var AuthorList = require('./authorList');
 var Link = require('react-router').Link;
