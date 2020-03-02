@@ -17,7 +17,7 @@
   "license": "ISC",
   "homepage": "https://bitbucket.org/samindre-rameshwar/react-flux-es6#readme",
   "dependencies": {
-    "bootstrap": "^3.3.7",
+    "bootstrap": "^3.4.1",
     "browserify": "^16.2.3",
     "flux": "^2.0.3",
     "gulp": "^3.9.1",
